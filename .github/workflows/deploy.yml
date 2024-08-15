@@ -1,0 +1,51 @@
+name: Deploy Hexo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 当推送到 main 分支时触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          submodules: false  # 禁用子模块检查
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20'
+
+      - name: Install Hexo Git Deployer
+        run: |
+          npm install hexo-deployer-git --save
+          npm install hexo-renderer-pug hexo-renderer-stylus --save
+          npm install hexo-cli -g
+
+      - name: Install Dependencies
+        run: npm install          
+
+      - name: Clean and Generate Static Files
+        run: |
+          hexo clean
+          hexo generate
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'VenenoSix24'
+          git config --global user.email '3405395460@qq.com'
+
+      - name: Deploy to GitHub Pages
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          cd public/
+          git init
+          git add -A
+          git commit -m "Create by workflows"
+          git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/VenenoSix24/VenenoSix24.github.io.git
+          git push origin HEAD:beta -f
