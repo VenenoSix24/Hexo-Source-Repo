@@ -1,0 +1,143 @@
+- class_name: 关于页
+  subtitle: 春早秋晚，岁岁平安✨
+  avatarImg: https://pic.imgdb.cn/item/64bf7c681ddac507ccd68f97.jpg
+  name: Lumos
+  description: 是一名学生、小小开发者、Gamer
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 学习
+      - 生活
+      - 程序
+      - 体验
+  helloAbout: Hello there!
+  skillsTips:
+    tips: 技能
+    title: 开启创造力
+  careers:
+    tips: 生涯
+    title: 无限进步
+    item:
+      - EDU,物流工程专业
+    img: https://pic.imgdb.cn/item/64c10a621ddac507cc4cf48d.png
+  statistic:
+    link: /archives
+    text: 文章总览
+    cover: https://bu.dusays.com/2023/05/01/644f4b037b930.jpg
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国，山东
+    background: https://pic.imgdb.cn/item/64c102cf1ddac507cc3ff48c.png
+    backgroundDark: https://pic.imgdb.cn/item/64c102cf1ddac507cc3ff50c.png
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 2004
+    selfInfoTips2: 某东大学
+    selfInfoContent2: 物流工程
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 大二学生👨‍🎓
+  # personalities:
+  #   author_name: 执政官
+  #   personality_type: ESFJ-A
+  #   photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+  #   personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
+  #   name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
+  # myphoto:
+  #   myphoto_url: https://pic.imgdb.cn/item/64c0f2181ddac507cc22acb4.jpg
+    # myphoto: 
+    # myphoto: 
+    # myphoto: 
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 春早秋晚
+    maxim_bottom: 岁岁平安
+  buff:
+    buff_tips: 特长
+    buff_top: 什么都会点的 工具人
+    buff_bottom: 爱捣鼓指数 MAX
+  game:
+    game_tips: 爱好游戏
+    game_title: 原神
+    game_uid: "UID: 244030512"
+    game_bg: https://bu.dusays.com/2023/04/22/64433bf26e25d.webp
+  comic:
+    comic_tips: 爱好番剧
+    comic_title: 追番/剧
+    comic_list:
+      - name: 成龙历险记
+        href: https://www.bilibili.com/bangumi/media/md28344676
+        cover: https://pic.imgdb.cn/item/64c10ffd1ddac507cc58f923.webp
+      - name: 哈利·波特与魔法石
+        href: https://www.bilibili.com/bangumi/media/md28221973
+        cover: https://pic.imgdb.cn/item/64c10fff1ddac507cc58fc25.webp
+      - name: 咒术回战
+        href: https://www.bilibili.com/bangumi/media/md28229899
+        cover: https://pic.imgdb.cn/item/64c10ffe1ddac507cc58fb83.webp
+      - name: 哈利·波特与密室
+        href: https://www.bilibili.com/bangumi/media/md28222004
+        cover: https://pic.imgdb.cn/item/64c10ffe1ddac507cc58fab7.webp
+      - name: 猫和老鼠
+        href: https://www.bilibili.com/bangumi/media/md132112
+        cover: https://pic.imgdb.cn/item/64c10ffe1ddac507cc58fa05.webp
+  like:
+    like_tips: 关注偏好
+    like_title: 日常、科技
+    like_bg: https://pic.imgdb.cn/item/64bf83c21ddac507cce4699f.jpg
+    like_bottom: 生活趣事，游戏，软硬件
+  music:
+    music_tips: 音乐偏好
+    music_title: 雨露均沾
+    music_bg: http://p2.music.126.net/fxI_iAsaRU9M5ZGE-Pu7iw==/109951164479032071.jpg
+    music_link: /music/?id=7912231576&server=netease
+  reward_list:
+    # - name: 海阔蓝
+    #   amount: 8.8
+    #   datatime: 2023-03-28
+    # - name: LK66
+    #   amount: 66.6
+    #   datatime: 2023-03-24
+    # - name: 张时貳
+    #   amount: 6.6
+    #   datatime: 2023-01-22
+    # - name: ZeroAf
+    #   amount: 9.9
+    #   datatime: 2022-12-14
+    # - name: LuckyWangXi
+    #   amount: 6.6
+    #   datatime: 2022-12-14
+    # - name: 刀中日月长
+    #   amount: 10
+    #   datatime: 2022-11-16
+    # - name: 鹿啵包
+    #   amount: 10
+    #   datatime: 2022-11-08
+    # - name: 疾速k
+    #   amount: 50
+    #   datatime: 2022-09-20
+    # - name: 伴舟先生大霖子
+    #   amount: 4.03
+    #   datatime: 2022-10-27
+    #   suffix: 贝壳
+    # - name: Magica_0x0
+    #   amount: 3.36
+    #   datatime: 2022-10-07
+    #   suffix: 贝壳
+    # - name: 名字就是要短像这样
+    #   amount: 3.36
+    #   datatime: 2022-08-25
+    #   suffix: 贝壳
+    # - name: Leviathan520
+    #   amount: 1.34
+    #   datatime: 2022-08-23
+    #   suffix: 贝壳
+    # - name: 托马斯
+    #   amount: 10
+    #   datatime: 2022-08-19
+    # - name: 哇是猫猫欸
+    #   amount: 1.34
+    #   datatime: 2022-08-19
+    #   suffix: 贝壳
+
+  extra: false
