@@ -33,10 +33,10 @@
     list:
       - desc: EDU,物流工程专业
         color: "#357ef5"
-      - desc: EDU,物流工程专业
-        color: "#357ef5"
-      - desc: EDU,物流工程专业
-        color: "#357ef5"
+      # - desc: EDU,物流工程专业
+      #   color: "#357ef5"
+      # - desc: EDU,物流工程专业
+      #   color: "#357ef5"
     img: https://pic.imgdb.cn/item/64c10a621ddac507cc4cf48d.png
   statistic:
     link: /archives
@@ -57,7 +57,7 @@
   personalities:
     author_name: 执政官
     personality_type: ESFJ-A
-    photo_url: https://bu.dusays.com/2023/07/05/64a4c63495ac5.jpg
+    photo_url: https://pic.imgdb.cn/item/64c102cf1ddac507cc3ff50c.png
     personality_img: https://npm.elemecdn.com/anzhiyu-blog@2.0.8/img/svg/ESFJ-A.svg
     name_url: https://www.16personalities.com/ch/esfj-%E4%BA%BA%E6%A0%BC
   maxim:

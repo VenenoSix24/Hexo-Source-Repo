@@ -4,6 +4,7 @@ date: 2023-07-27 21:54:11
 categories: 实用教程
 tags: 
   - Hexo
+  - Github
   - 教程
 cover: "https://pic.imgdb.cn/item/64bf641a1ddac507cca972a1.png"
 top_group_index: 2

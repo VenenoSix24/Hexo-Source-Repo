@@ -1087,9 +1087,9 @@ console:
 
 # 51a统计配置
 LA:
-  enable: false
-  ck:
-  LingQueMonitorID:
+  enable: true
+  ck: 3FOGt62MnfRMs3Ee
+  LingQueMonitorID: #3JO52xcDvjCuEqru
 
 # 标签卖萌
 diytitle:
