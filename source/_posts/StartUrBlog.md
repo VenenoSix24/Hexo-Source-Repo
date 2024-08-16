@@ -6,7 +6,7 @@ tags:
   - Hexo
   - 教程
 cover: "https://pic.imgdb.cn/item/64bf641a1ddac507cca972a1.png"
-top_group_index: 1
+top_group_index: 2
 ---
 
 ## 前言

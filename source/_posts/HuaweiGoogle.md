@@ -7,7 +7,7 @@ tags:
   - 鸿蒙
   - Google
 cover: "https://pic.imgdb.cn/item/64c207831ddac507ccc198f5.jpg"
-top_group_index: 2
+top_group_index: 3
 ---
 ## 准备工作
 
