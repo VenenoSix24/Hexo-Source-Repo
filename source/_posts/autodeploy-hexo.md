@@ -6,7 +6,7 @@ tags:
   - Hexo
   - Github
   - 教程
-cover: "https://smms.app/image/MPGmK7xjlTWyvie"
+cover: "https://s2.loli.net/2024/08/20/MPGmK7xjlTWyvie.jpg"
 top_group_index: 1
 ---
 
