@@ -23,6 +23,8 @@ jobs:
       - name: Install Hexo Git Deployer
         run: |
           npm install hexo-deployer-git --save
+          npm install hexo-wordcount --save
+          npm install hexo-butterfly-envelope --save
           npm install hexo-renderer-pug hexo-renderer-stylus --save
           npm install hexo-cli -g
 

@@ -65,26 +65,26 @@ top_group_index: 1
        runs-on: ubuntu-latest
    
        steps:
-         - name: Checkout repository
+         - name: Checkout repository  # 检查分支
            uses: actions/checkout@v2
            with:
              submodules: false  # 禁用子模块检查
    
-         - name: Setup Node.js
+         - name: Setup Node.js  # 安装 node
            uses: actions/setup-node@v2
            with:
-             node-version: '20'
+             node-version: '20'  # 这里 node 版本请保持与你本机一致
    
-         - name: Install Hexo Git Deployer
+         - name: Install Hexo Git Deployer  # 安装 Hexo
            run: |
              npm install hexo-deployer-git --save
              npm install hexo-renderer-pug hexo-renderer-stylus --save
              npm install hexo-cli -g
    
-         - name: Install Dependencies
+         - name: Install Dependencies  # 安装依赖
            run: npm install          
    
-         - name: Clean and Generate Static Files
+         - name: Clean and Generate Static Files  # 生成静态文件
            run: |
              hexo clean
              hexo generate
@@ -94,7 +94,7 @@ top_group_index: 1
              git config --global user.name 'VenenoSix24'
              git config --global user.email '3405395460@qq.com'
    
-         - name: Deploy to GitHub Pages
+         - name: Deploy to GitHub Pages  # 部署到 Github
            env:
              GH_TOKEN: ${{ secrets.GH_TOKEN }}
            run: |
@@ -102,8 +102,8 @@ top_group_index: 1
              git init
              git add -A
              git commit -m "Create by workflows"
-             git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/VenenoSix24/VenenoSix24.github.io.git
-             git push origin HEAD:main -f
+             git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/VenenoSix24/VenenoSix24.github.io.git  # 这里更改成你的远程仓库地址
+             git push origin HEAD:main -f  # 推送到 main 分支
    
    ```
 
@@ -117,7 +117,9 @@ top_group_index: 1
 
 # 连接本地与远程仓库
 
-## 博客目录使用过git
+**首先** 将`博客根目录/themes/anzhiyu(你的主题)/.git`文件夹删除或者移动到非博客目录下，`.git`文件夹的存在可能会导致将其识别成子项目，无法上传到远程仓库
+
+## 博客目录曾使用过git
 
 1. 添加屏蔽项（减少提交的文件数量，加快提交速度）
 
@@ -141,27 +143,25 @@ top_group_index: 1
 2. 在博客根目录打开Git Bash终端，使用以下命令重设远程仓库地址
 
    ```bash
-   git remote rm origin  #删除原有仓库链接
-   git remote add origin git@github.com:[Username]/[Repo].git  #参考仓库代码指引
-   git checkout -b main  #切换到main分支
-   git add .  #将所有文件的修改添加到暂存区
-   git commit -m "update hexo"  #提交暂存区到本地仓库
-   git push origin main  #推送到远程仓库
+   git remote rm origin  # 删除原有仓库链接
+   git remote add origin git@github.com:[Username]/[Repo].git  # 参考仓库代码指引
+   git checkout -b main  # 切换到main分支
+   git add .  # 将所有文件的修改添加到暂存区
+   git commit -m "update hexo"  # 提交暂存区到本地仓库
+   git push origin main  # 推送到远程仓库
    ```
 
 ## 博客目录未使用过git
 
-1. **首先** 将`博客根目录/themes/anzhiyu(你的主题)/.git`文件夹删除或者移动到非博客目录下，`.git`文件夹的存在可能会导致将其识别成子项目，无法上传到远程仓库
-
-2. 在博客根目录打开Git Bash终端，使用以下命令连接远程仓库
+1. 在博客根目录打开Git Bash终端，使用以下命令连接远程仓库
 
    ```bash
-   git init  #初始化仓库
-   git remote add origin git@github.com:[Username]/[Repo].git  #参考仓库代码指引
-   git checkout -b main  #切换到main分支
+   git init  # 初始化仓库
+   git remote add origin git@github.com:[Username]/[Repo].git  # 参考仓库代码指引
+   git checkout -b main  # 切换到main分支
    ```
 
-3. 添加屏蔽项（减少提交的文件数量，加快提交速度）
+2. 添加屏蔽项（减少提交的文件数量，加快提交速度）
 
    打开`博客根目录/.gitignore`输入以下内容 (没有该文件就新建)：
 
@@ -180,15 +180,22 @@ top_group_index: 1
 
    > **最后一行替换成你自己的主题名**
 
-4. 再次打开Git Bash终端，使用以下命令将博客源码推送到远程仓库：
+3. 再次打开Git Bash终端，使用以下命令将博客源码推送到远程仓库：
 
    ```bash
-   git add .  #将所有文件的修改添加到暂存区
-   git commit -m "update hexo"  #提交暂存区到本地仓库
-   git push origin main  #推送到远程仓库
+   git add .  # 将所有文件的修改添加到暂存区
+   git commit -m "update hexo"  # 提交暂存区到本地仓库
+   git push origin main  # 推送到远程仓库
    ```
 
-   
+
+> 注意，上传到远程仓库后，请打开仓库的 `根目录/themes` 查看你的**主题文件夹图标**是否带有**`箭头 →`**
+>
+> 注意，上传到远程仓库后，请打开仓库的 `根目录/themes` 查看你的**主题文件夹图标**是否带有**`箭头 →`**
+>
+> 注意，上传到远程仓库后，请打开仓库的 `根目录/themes` 查看你的**主题文件夹图标**是否带有**`箭头 →`**
+>
+> **若有箭头**，请拉到**文章最后**，查看`可能遇到的问题`
 
 # 查看是否配置成功
 
@@ -206,6 +213,20 @@ top_group_index: 1
 
 # 可能遇到的问题
 
-主题`.git`文件夹问题
+## 主题`.git`文件夹问题
 
-待补充...
+在上传源码到远程仓库后，你的主题文件夹可能被识别成**子系统模块**，无法正常打开，解决方法如下：
+
+1. 将`博客根目录/themes/anzhiyu(你的主题)/.git`文件夹**删除**
+
+2. 右键打开`Git Bash Here`，执行以下命令：
+
+   ```bash
+   git rm --cached [主题文件夹名]
+   git add .
+   git commit -m "commit messge"  # 内容随意
+   git push origin main  # 推送到你的分支
+   ```
+
+   
+

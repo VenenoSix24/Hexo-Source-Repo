@@ -5,7 +5,7 @@
 # Site
 title: 烟花易逝🎇
 subtitle: ''
-description: '欢迎访问捏~'
+description: # '欢迎访问捏~'
 keywords:
 author: VenenoSix24
 language: zh-CN
@@ -99,8 +99,8 @@ aplayer:
   meting: true
   asset_inject: false
 
-  # envelope_comment 留言板
-# see https://akilar.top/posts/e2d3c450/
+#envelope_comment
+#seehttps://akilar.top/posts/e2d3c450/
 envelope_comment:
   enable: true #控制开关
   custom_pic:
