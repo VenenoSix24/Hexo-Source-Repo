@@ -13,7 +13,7 @@ cover: "https://s2.loli.net/2024/10/22/CfnAZWq1t2KN7dP.jpg"
 
 ## 介绍
 
-[![Static Badge](https://img.shields.io/badge/OpenCore-1.0.2-blue)](https://github.com/acidanthera/OpenCorePkg/releases) [![Static Badge](https://img.shields.io/badge/macOS-15-red)](https://www.apple.com.cn/macos/macos-sequoia/) ![GitHub last commit](https://img.shields.io/github/last-commit/VenenoSix24/MSI-B350M-MORTAR-Hackintosh-OpenCore1.0.2-EFI) ![GitHub License](https://img.shields.io/github/license/VenenoSix24/MSI-B350M-MORTAR-Hackintosh-OpenCore1.0.2-EFI) [![Static Badge](https://img.shields.io/badge/Find%20me-Blog-orange?link=blog.776624.xyz)](https://blog.776624.xyz/) 
+[![Static Badge](https://img.shields.io/badge/OpenCore-1.0.2-blue)](https://github.com/acidanthera/OpenCorePkg/releases)[![Static Badge](https://img.shields.io/badge/macOS-15-red)](https://www.apple.com.cn/macos/macos-sequoia/)![GitHub last commit](https://img.shields.io/github/last-commit/VenenoSix24/MSI-B350M-MORTAR-Hackintosh-OpenCore1.0.2-EFI)![GitHub License](https://img.shields.io/github/license/VenenoSix24/MSI-B350M-MORTAR-Hackintosh-OpenCore1.0.2-EFI)[![Static Badge](https://img.shields.io/badge/Find%20me-Blog-orange?link=blog.776624.xyz)](https://blog.776624.xyz/)
 
 ### 前言
 
