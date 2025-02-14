@@ -3,7 +3,7 @@ name: Deploy Hexo to GitHub Pages
 on:
   push:
     branches:
-      - main  # 当推送到 main 分支时触发
+      - main # 当推送到 main 分支时触发
 
 jobs:
   build:
@@ -13,12 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          submodules: false  # 禁用子模块检查
+          submodules: false # 禁用子模块检查
 
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install Hexo Git Deployer
         run: |
@@ -29,7 +29,7 @@ jobs:
           npm install hexo-cli -g
 
       - name: Install Dependencies
-        run: npm install          
+        run: npm install
 
       - name: Clean and Generate Static Files
         run: |
@@ -48,6 +48,7 @@ jobs:
           cd public/
           git init
           git add -A
-          git commit -m "Create by workflows"
+          current_time=$(date "+%Y-%m-%d %H:%M:%S")
+          git commit -m "📝 update site by actions at $current_time"
           git remote add origin https://${{ secrets.GH_TOKEN }}@github.com/VenenoSix24/VenenoSix24.github.io.git
           git push origin HEAD:beta -f
