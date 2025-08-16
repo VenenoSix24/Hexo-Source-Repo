@@ -73,7 +73,7 @@ social:
 author_status:
   enable: true
   # 可以是任何图片，建议放表情包或者emoji图片，效果都很好，[表情包速查](https://emotion.xiaokang.me/)
-  statusImg: "https://bu.dusays.com/2021/01/15/1a91b3d40e9df.png"
+  statusImg: "https://bu.dusays.com/2023/08/24/64e6ce9c507bb.png"
   skills:
     - 🤖️ 数码科技爱好者
     - 🔍 分享与热心帮助
@@ -98,7 +98,7 @@ algolia_search:
     # - Hexo
 
 # Docsearch
-# Apply and Docs: see https://docsearch.algolia.com/
+# Apply and Option Docs: see https://docsearch.algolia.com/
 # Crawler Admin Console: see https://crawler.algolia.com/
 # Settings: https://www.algolia.com/
 docsearch:
@@ -193,7 +193,7 @@ post_meta:
 # 主色调相关配置
 mainTone:
   enable: false # true or false 文章是否启用获取图片主色调
-  mode: both # cdn/api/both cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求both/cdn/api获取主色调，而是直接使用配置的颜色
+  mode: both # colorthief/cdn/api/both colorthief模式为前端获取图片主色调，cdn模式为图片url+imageAve参数获取主色调，api模式为请求API获取主色调，both模式会先请求cdn参数，无法获取的情况下将请求API获取，可以在文章内配置main_color: '#3e5658'，使用十六进制颜色，则不会请求colorthief/cdn/api/both获取主色调，而是直接使用配置的颜色
   # 项目地址：https://github.com/anzhiyu-c/img2color-go
   api: https://img2color-go.vercel.app/api?img= # mode为api时可填写
   cover_change: true # 整篇文章跟随cover修改主色调
@@ -284,7 +284,7 @@ photofigcaption: false
 # false: disable pagination
 post_pagination: 2
 
-# Displays outdated notice for a post (文章过期提醒)  距离上次更新已经过去了 365 天，文章的内容可能已经过时。
+# Displays outdated notice for a post (文章过期提醒)
 noticeOutdate:
   enable: true
   style: flat # style: simple/flat
@@ -350,10 +350,10 @@ valine:
 # https://waline.js.org/
 waline:
   serverURL: # Waline server address url
-  bg: # waline background
+  bg: # Waline background
   pageview: false
-  meta: false # 归属地, 操作系统 前是否显示图标
-  imageUploader: true # 是否启用图片上传功能，默认开启，限制为 128kb 的 base64 图片
+  meta_css: false # 是否引入 waline-meta.css ,以便显示 meta图标
+  imageUploader: true # 配置为 > 换行后可自定义图片上传逻辑，示例: https://waline.js.org/cookbook/customize/upload-image.html#案例
   # 以下为可选配置，后续若有新增/修改配置参数可在此自行添加/修改
   option:
 
@@ -372,6 +372,21 @@ artalk:
   site:
   visitor: false
   option:
+
+# giscus
+# https://giscus.app/
+giscus:
+  repo: # GitHub repository name
+  repo_id: # GitHub repository id
+  category_id: # GitHub repository category id
+  theme:
+    light: light
+    dark: dark
+  option: # options
+    data-lang: zh-CN
+    data-mapping:
+    data-category:
+    data-input-position:
 
 # Chat Services
 # --------------------------------------
@@ -998,7 +1013,7 @@ instantpage: true
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之间添加空格)
 pangu:
-  enable: true
+  enable: false
   field: site # site/post
 
 # Lazyload (图片懒加载)
@@ -1037,7 +1052,7 @@ home_top:
   timemode: date #date/updated
   title: 春早秋晚
   subTitle: 岁岁平安
-  siteText: VenenoSix24.github.io
+  siteText: blog.776624.xyz
   category:
     - name: 精选推荐
       path: /categories/精选推荐/
@@ -1118,6 +1133,9 @@ nav_music:
   server: netease
   volume: 0.5 # 默认音量
   all_playlist: https://music.163.com/?from=itab#/playlist?id=13342783548
+
+# 路径为 /music 的音乐页面默认加载的歌单 1. nav_music 2. custom
+music_page_default: nav_music
 
 # 评论匿名邮箱
 visitorMail:
@@ -1206,8 +1224,8 @@ rightClickMenu:
 
 # 首页随便逛逛people模式 而非技能点模式，关闭后为技能点模式需要配置creativity.yml
 peoplecanvas:
-  enable: false
-  img: https://upload-bbs.miyoushe.com/upload/2023/09/03/125766904/ee23df8517f3c3e3efc4145658269c06_5714860933110284659.png
+  enable: true
+  img: https://upload-bbs.miyoushe.com/upload/2024/07/27/125766904/ba62475f396df9de3316a08ed9e65d86_5680958632268053399..png
 
 # 动效
 dynamicEffect:
@@ -1312,3 +1330,4 @@ CDN:
     # waterfall:
     # ali_iconfont_css:
     # accesskey_js:
+    # colorthief:
