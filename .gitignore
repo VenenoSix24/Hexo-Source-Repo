@@ -8,6 +8,7 @@ public/
 _multiconfig.yml
 _config update.yml
 themes/anzhiyu/.git
+.history/
 
 ### Hexo ###
 db.json
