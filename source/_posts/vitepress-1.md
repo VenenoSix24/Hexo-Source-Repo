@@ -7,7 +7,7 @@ tags:
   - 个人网站
   - 前端
   - 教程
-cover:
+cover: https://s2.loli.net/2025/08/24/6Uqb34wAlZGRo18.png
 ---
 
 ## **前言：寻找完美的个人网站解决方案**
